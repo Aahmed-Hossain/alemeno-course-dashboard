@@ -1,0 +1,123 @@
+[
+    {
+        "name": "Introduction to React Native",
+        "instructor": "John Doe",
+        "description": "Learn the basics of React Native development and build your first mobile app.",
+        "enrollmentStatus": "Open",
+        "thumbnail": "https://i.ibb.co/Jn0z2ht/img2.jpg",
+        "duration": 8,
+        "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to React Native",
+                "content": "Overview of React Native, setting up your development environment."
+            },
+            {
+                "week": 2,
+                "topic": "Building Your First App",
+                "content": "Creating a simple mobile app using React Native components."
+            }
+        ]
+    },
+    {
+        "name": "Advanced React Native.",
+        "instructor": "Jane Smith",
+        "description": "Take your React Native skills to the next level with advanced concepts and real-world applications.",
+        "enrollmentStatus": "Open",
+        "thumbnail": "https://i.ibb.co/7zWFn4C/Rectangle-2-5.png",
+        "duration": 10,
+        "schedule": "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
+        "location": "Online",
+        "prerequisites": ["Completion of Introduction to React Native", "Experience with state management in React"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Advanced State Management in React Native",
+                "content": "Exploring advanced state management techniques in React Native applications."
+            },
+            {
+                "week": 2,
+                "topic": "Integration with Native Modules",
+                "content": "Integrating native modules into your React Native projects for enhanced functionality."
+            }
+        ]
+    },
+    {
+        "name": "React Native UI Design Mastery",
+        "instructor": "Alex Johnson",
+        "description": "Master the art of designing beautiful and responsive user interfaces in React Native.",
+        "enrollmentStatus": "Open",
+        "thumbnail": "https://i.ibb.co/N22gX1R/img4.jpg",
+        "duration": 6,
+        "schedule": "Fridays, 5:00 PM - 7:00 PM",
+        "location": "Online",
+        "prerequisites": ["Proficiency in CSS", "Basic understanding of mobile app design principles"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Responsive Layouts in React Native",
+                "content": "Creating responsive and adaptive layouts for various devices."
+            },
+            {
+                "week": 2,
+                "topic": "Customizing Native Components",
+                "content": "Customizing and styling native components to achieve a unique look and feel."
+            }
+        ]
+    },
+    {
+        "name": "React Native for Cross-Platform Development",
+        "instructor": "Michael Brown",
+        "description": "Explore the power of React Native for building cross-platform applications that run seamlessly on iOS and Android.",
+        "enrollmentStatus": "Open",
+        "thumbnail": "https://i.ibb.co/SKzf756/img3.jpg",
+        "duration": 12,
+        "schedule": "Saturdays, 10:00 AM - 12:00 PM",
+        "location": "Online",
+        "prerequisites": ["Understanding of mobile app deployment", "Basic knowledge of version control (Git)"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Cross-Platform Development",
+                "content": "Understanding the fundamentals of cross-platform development with React Native."
+            },
+            {
+                "week": 2,
+                "topic": "Advanced Deployment Strategies",
+                "content": "Implementing advanced deployment strategies for cross-platform React Native apps."
+            }
+        ]
+    },
+    {
+        "name": "Digital Marketing Testing and Debugging",
+        "instructor": "Emily Davis",
+        "description": "Learn the best practices for testing and debugging React Native applications to ensure a smooth development process.",
+        "enrollmentStatus": "Open",
+        "thumbnail": "https://i.ibb.co/G5XRHTv/img1.jpg",
+        "duration": 8,
+        "schedule": "Thursdays, 3:00 PM - 5:00 PM",
+        "location": "Online",
+        "prerequisites": ["Experience with unit testing in JavaScript", "Familiarity with debugging tools"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Unit Testing in React Native",
+                "content": "Implementing unit tests for React Native components and functions."
+            },
+            {
+                "week": 2,
+                "topic": "Effective Debugging Strategies",
+                "content": "Exploring effective strategies for debugging React Native applications."
+            }
+        ]
+    }
+]
+
+
+
+
+
+
