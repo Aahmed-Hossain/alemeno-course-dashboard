@@ -1,9 +1,9 @@
-import { useLoaderData } from "react-router-dom";
-import { IoLocationOutline } from "react-icons/io5";
+import { Link, useLoaderData } from "react-router-dom";
 
 const CourseDetails = () => {
   const singleCourse = useLoaderData();
   const {
+    _id,
     name,
     syllabus,
     location,
@@ -33,7 +33,6 @@ const CourseDetails = () => {
           <p className="text-gray-600">{description}</p>
           <h5 className="text-md font-semibold flex  gap-2">
             Location:
-            {/* <p className="flex gap-1 items-center"><IoLocationOutline/> Location:</p> */}
             <span className="tex-xl text-[#FF3811]">{location}</span>
           </h5>
           <h3>
@@ -58,18 +57,27 @@ const CourseDetails = () => {
           </h3>
           <h3>
             
-          Pre-requisites : 
-            <span className="tex-xl text-gray-600 flex flex-col gap-2">{prerequisites.map((item, index)=>(
-              <p key={index}>{item}</p>
+          <span className="font-semibold text-xl">Pre-requisites : </span>
+            <span className="tex-xl text-gray-600 flex flex-col gap-1">{prerequisites.map((item, index)=>(
+              <p key={index}>{`${index + 1}. ${item}`}</p>
               ))}</span>
           </h3>
-          
+          <Link to={`/enrollNow/${_id}`} className="bg-red-200 shadow-md text-xl font-semibold rounded-md w-36 flex justify-center hover:shadow-lg hover:bg-red-300 p-1">Enroll Now
+          </Link>
         </div>
       </div>
-      <h3>
-          Syllabus :
-            <span className="tex-xl text-">{syllabus.map()}</span>
-          </h3>
+      <div>
+          <h2 className="text-2xl font-semibold">Syllabus:</h2>
+         {
+          syllabus.map((item, idx) => (<p  key={idx} className="flex flex-col">
+            <details>
+              <summary>Week: {item.week} </summary>
+              <p> Topic: {item.topic}</p>
+              <p> Content: {item.content}</p>
+            </details>
+          </p>))
+         }
+      </div>
     </div>
   );
 };
