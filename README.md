@@ -9,18 +9,14 @@ Welcome to the **React Responsive Course Dashboard** project! This is a small we
 - View enrolled courses in your personalized dashboard.
 - Responsive design for a seamless experience across devices.
 
-## Technologies Used
-
-- React.js
-- [React Router](https://reactrouter.com/) for navigation
-- [Your Favorite State Management Library] <!-- Add the state management library you used -->
-- CSS for styling
-
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-
+   git clone https://github.com/Aahmed-Hossain/alemeno-course-dashboard.git
+## Install dependencies:
+- npm install
+## Start the development server:
+npm start or yarn dev or npm run dev
 
