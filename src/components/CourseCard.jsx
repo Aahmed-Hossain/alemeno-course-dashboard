@@ -16,7 +16,7 @@ const CourseCard = ({course}) => {
             </h3>
             <div className="flex items-center justify-between px-3 py-2 bg-gray-400 dark:bg-gray-700">
               <span className="font-bold text-gray-900 dark:text-gray-200">
-                Price: ${duration}
+                Duration:{duration} Weeks
               </span>
               <Link to={`/${_id}`} className="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
                  See Details

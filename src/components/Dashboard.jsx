@@ -34,7 +34,7 @@ const Dashboard = () => {
             <td className='py-4 px-1'>{student.name} </td>
     
             <td className='py-4 px-1'>Name: {student.studentName} <br />Email: {student.email}</td>
-            <td className='hidden md:block py-4 px-1 '>{student.instructor}</td>
+            <td className='hidden md:block py-4 px-1 text-center'>{student.instructor}</td>
             <td className='py-4 px-1'>{student.date.slice(0, 10)}</td>
           </tr>
                 ))

@@ -43,20 +43,20 @@ function App() {
   return (
     <div className="w-11/12 mx-auto">
        <div className="text-xl flex flex-col md:flex-row lg:flex-row justify-between items-center font-semibold h-32 md:h-16 lg:h-16 border-b">
-        <img className="w-24" src={logo} alt="" />
+        <img className="w-28 h-12" src={logo} alt="" />
         {/* serch option */}
-        <div className="flex items-center border-2 border-orange-500 rounded-xl p-2">
+        <div className="flex items-center border-2 border-red-500 rounded-xl p-1">
           <input
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={handleKeyPress}  
             placeholder="Search Your Course"
-            className="flex-1 px-4 py-2 border-none focus:outline-none"
+            className="flex-1 p-2 border-none focus:outline-none"
           />
           <button
           onClick={handleSearch}
-           className="ml-2 p-2 hover:bg-orange-600 bg-orange-500 text-white rounded-full focus:outline-none">
+           className="ml-2 p-2 hover:bg-red-600 bg-red-500 text-white rounded-full focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -75,12 +75,12 @@ function App() {
        </div>
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6  my-4">
         {
-          searchResults.length === 0 ? 
-          courses.map(course => (<CourseCard
+          searchResults?.length === 0 ? 
+          courses?.map(course => (<CourseCard
           key={course._id}
           course={course}
           ></CourseCard>)) :
-          searchResults.map(course => (<CourseCard
+          searchResults?.map(course => (<CourseCard
             key={course._id}
             course={course}
             ></CourseCard>))
@@ -91,4 +91,3 @@ function App() {
 }
 
 export default App;
-// https://course-dashboard-server.vercel.app/courses
