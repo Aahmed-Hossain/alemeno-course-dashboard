@@ -42,10 +42,9 @@ function App() {
 
   return (
     <div className="w-11/12 mx-auto">
-       <div className="text-xl flex justify-between items-center font-semibold h-16 border-b">
+       <div className="text-xl flex flex-col md:flex-row lg:flex-row justify-between items-center font-semibold h-32 md:h-16 lg:h-16 border-b">
         <img className="w-24" src={logo} alt="" />
         {/* serch option */}
-
         <div className="flex items-center border-2 border-orange-500 rounded-xl p-2">
           <input
             type="text"
@@ -85,7 +84,6 @@ function App() {
             key={course._id}
             course={course}
             ></CourseCard>))
-
         }
        </div>
     </div>
