@@ -7,6 +7,7 @@ import CourseDetails from './components/CourseDetails';
 import EnrollNow from './components/EnrollNow';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import Dashboard from './components/Dashboard';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   path: '/enrollNow/:id',
   element: <EnrollNow></EnrollNow>,
   loader: ({params})=> fetch(`https://course-dashboard-server.vercel.app/courses/${params.id}`)
+},
+{
+  path: '/dashboard',
+  element: <Dashboard></Dashboard>
 }
 ]);
 

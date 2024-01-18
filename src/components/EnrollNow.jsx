@@ -25,7 +25,7 @@ const handleEnroll = e => {
           toast.success("Great!!  Enrolled successfully!");
         }
         form.reset();
-        navigate("/");
+        navigate("/dashboard");
       })
       .catch((error) => console.log(error));
 }
